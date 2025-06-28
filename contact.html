@@ -3,7 +3,268 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>contact</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <title>Michael Football Club | Home</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-header">
+          <div class="nav-left">
+            <div class="nav-logo">
+              <a href="#">
+                <img src="assets/logofc.png" alt="logo" class="logo" />
+              </a>
+            </div>
+            <div class="nav-title">
+              <h3>MICHAEL F.C</h3>
+            </div>
+          </div>
+          <button class="nav-burger" id="nav-burger" aria-label="Menu">
+            <i class="ri-menu-line"></i>
+          </button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact-form">Contact Us</a></li>
+          </ul>
+          <div class="nav-btn">
+            <button onclick="location.href='#contact-form'" class="btn">
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="header-image">
+        <img src="assets/mfc-training41.png" alt="mfc-training3" />
+      </div>
+
+      <div class="section-container header-container" id="home">
+        <div class="header-content">
+          <h1>MICHAEL</h1>
+          <h1><span style="color: #f97316">FOOTBALL</span> CLUB</h1>
+          <p>
+            Join the most electrifying football experience. Where STARS are born
+            and champions rise through dedicated training.
+          </p>
+          <div class="header-btn">
+            <button class="btn">Watch Training</button>
+            <button class="btn-2">Join Training</button>
+          </div>
+        </div>
+      </div>
+      <div class="section-container header-container2">
+        <div class="header-content-image">
+          <img src="assets/mfc-lineup.png" alt="mfc-lineup" />
+        </div>
+      </div>
+    </header>
+    <section id="summary">
+      <ul class="summary" id="summary">
+        <li>
+          <h2>250+</h2>
+          <p>Players</p>
+        </li>
+        <li>
+          <h2>15</h2>
+          <p>Trophies</p>
+        </li>
+        <li>
+          <h2>50k</h2>
+          <p>Fans</p>
+        </li>
+        <li>
+          <h2>25</h2>
+          <p>Years</p>
+        </li>
+      </ul>
+    </section>
+    <secion class="contact" id="contact-form">
+      <div class="contact-header">
+        <h2>CONTACT <span style="color: #f97316">US</span></h2>
+        <p>Get in touch with Michael F.C</p>
+      </div>
+      <div class="contact-details">
+        <div class="contact-detail-header">
+          <div class="contact-title">
+            <h3>Get in touch!</h3>
+          </div>
+          <div class="contact-group">
+            <ul class="contacts-container">
+              <li>
+                <div class="address">
+                  <h3>Address</h3>
+                </div>
+                <div class="address-icon">
+                  <i class="ri-map-pin-2-fill"></i>
+                  <p>123 Football Lane, Soccer City, Finland</p>
+                </div>
+              </li>
+              <li>
+                <div class="phone">
+                  <h3>Phone</h3>
+                </div>
+                <div class="address-icon">
+                  <i class="ri-phone-fill"></i>
+                  <p>(+358)44556688</p>
+                </div>
+              </li>
+              <li>
+                <div class="email">
+                  <h3>Email</h3>
+                </div>
+                <div class="address-icon">
+                  <i class="ri-mail-fill"></i>
+                  <p>
+                    <a href="mailto:info@michealfc.com " class="mail">
+                      info@michealfc.com</a
+                    >
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <form
+          action="https://formspree.io/f/{FORM_ID}"
+          class="fs-form"
+          target="_top"
+          method="POST"
+        >
+          <div class="fs-field">
+            <input
+              class="fs-input"
+              placeholder="Your name"
+              id="name"
+              name="name"
+              required
+            />
+          </div>
+          <div class="fs-field">
+            <input
+              class="fs-input"
+              placeholder="Email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="fs-field">
+            <textarea
+              placeholder="Type your message here..."
+              class="fs-textarea"
+              id="message"
+              name="message"
+              required
+            ></textarea>
+          </div>
+          <div class="fs-button-group">
+            <button class="fs-button" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </secion>
+    <section class="cards">
+      <div class="cards-tag">
+        <h2>OUR <span style="color: #f97316">SQUAD</span></h2>
+        <p>Meet the champions who make us proud</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <img src="assets/logofc.png" alt="John Doe" class="card-img" />
+          <div class="cards-container">
+            <h4>John Doe</h4>
+            <p>Captain & Striker</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="assets/mfc-training1.png"
+            alt="Jane Smith"
+            class="card-img"
+          />
+          <div class="cards-container">
+            <h4>Jane Smith</h4>
+            <p>Midfielder</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/mfc-training2.png" alt="Alex Lee" class="card-img" />
+          <div class="cards-container">
+            <h4>Alex Lee</h4>
+            <p>Defender</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="call">
+      <div class="call-container">
+        <h2>Join the <span style="color: #f97316">MICHAEL F.C</span> Family</h2>
+        <p>
+          Become part of our legacy. Train with the best, play with the best.
+        </p>
+      </div>
+      <div class="footer-btn">
+        <button class="btn">Start Your Journey</button>
+        <button onclick="location.href='#contact-form'" class="btn-2">
+          Contact Us
+        </button>
+      </div>
+    </section>
+    <script>
+      const burger = document.getElementById("nav-burger");
+      const links = document.getElementById("nav-links");
+      burger.onclick = () => links.classList.toggle("open");
+    </script>
+  </body>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-header">
+          <div class="footer-logo">
+            <a href="#">
+              <img src="assets/logofc.png" alt="logo" class="logo" />
+            </a>
+          </div>
+          <div class="footer-title">
+            <h3>MICHAEL F.C</h3>
+          </div>
+        </div>
+        <div class="footer-text">
+          <p>Where champions are made.</p>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <div class="footer-contact-header">
+          <h3>Contact</h3>
+        </div>
+        <div class="contact-address">
+          <p>123 Football Lane, Soccer City, Finland</p>
+          <p>
+            <a href="mailto:info@michealfc.com " class="mail">
+              info@michealfc.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="ri-youtube-fill"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-copyright">
+        &copy; 2023 Michael Football Club. All rights reserved.
+      </p>
+    </div>
+  </footer>
 </html>
