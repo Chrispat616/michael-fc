@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>home</title>
+    <title>Michael Football Club | Home</title>
   </head>
   <body>
     <header>
@@ -24,17 +24,19 @@
               <h3>MICHAEL F.C</h3>
             </div>
           </div>
+          <button class="nav-burger" id="nav-burger" aria-label="Menu">
+            <i class="ri-menu-line"></i>
+          </button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+          </ul>
           <div class="nav-btn">
             <button class="btn">Contact Us</button>
           </div>
         </div>
-
-        <ul class="nav-links" id="nav-links">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
       </nav>
       <div class="header-image">
         <img src="assets/mfc-training41.png" alt="mfc-training3" />
@@ -54,7 +56,7 @@
           </div>
         </div>
       </div>
-      <div class="section-container header-container2" id="home">
+      <div class="section-container header-container2">
         <div class="header-content-image">
           <img src="assets/mfc-lineup.png" alt="mfc-lineup" />
         </div>
@@ -80,11 +82,11 @@
         </li>
       </ul>
     </section>
-    <div class="training-tag">
-      <h2>TRAINING <span style="color: #f97316">EXCELLENCE</span></h2>
-      <p>Experience world-class training facilities and methods</p>
-    </div>
-    <secion class="training-sess">
+    <secion class="training-sessions">
+      <div class="training-tag">
+        <h2>TRAINING <span style="color: #f97316">EXCELLENCE</span></h2>
+        <p>Experience world-class training facilities and methods</p>
+      </div>
       <div>
         <ul class="assets-container">
           <li>
@@ -103,7 +105,9 @@
               alt="Players stretching"
               loading="lazy"
             />
-            <div class="image-caption">Pre-match warmup stretching routine</div>
+            <div class="image-caption">
+              Pre-match warmup - Stretching routine
+            </div>
           </li>
           <li>
             <img
@@ -111,7 +115,9 @@
               alt="Training session drills"
               loading="lazy"
             />
-            <div class="image-caption">Intensive dribbling drills session</div>
+            <div class="image-caption">
+              Intensive dribbling - Drills session
+            </div>
           </li>
           <li>
             <img
@@ -127,13 +133,106 @@
       </div>
 
       <div class="video-container">
-        <video controls poster="assets/video-poster.jpg" preload="metadata">
+        <video controls preload="metadata">
           <source src="assets/mfc-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag
         </video>
-        <div class="video-caption">
-          Highlights from our latest training session
-        </div>
+        <div class="video-caption">Highlights from our training session</div>
       </div>
     </secion>
+    <section class="cards">
+      <div class="cards-tag">
+        <h2>OUR <span style="color: #f97316">SQUAD</span></h2>
+        <p>Meet the champions who make us proud</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card">
+          <img src="assets/logofc.png" alt="John Doe" class="card-img" />
+          <div class="cards-container">
+            <h4>John Doe</h4>
+            <p>Captain & Striker</p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="assets/mfc-training1.png"
+            alt="Jane Smith"
+            class="card-img"
+          />
+          <div class="cards-container">
+            <h4>Jane Smith</h4>
+            <p>Midfielder</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/mfc-training2.png" alt="Alex Lee" class="card-img" />
+          <div class="cards-container">
+            <h4>Alex Lee</h4>
+            <p>Defender</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="call">
+      <div class="call-container">
+        <h2>Join the <span style="color: #f97316">MICHAEL F.C</span> Family</h2>
+        <p>
+          Become part of our legacy. Train with the best, play with the best.
+        </p>
+      </div>
+      <div class="footer-btn">
+        <button class="btn">Start Your Journey</button>
+        <button class="btn-2">Contact Us</button>
+      </div>
+    </section>
+    <script>
+      const burger = document.getElementById("nav-burger");
+      const links = document.getElementById("nav-links");
+      burger.onclick = () => links.classList.toggle("open");
+    </script>
   </body>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-header">
+          <div class="footer-logo">
+            <a href="#">
+              <img src="assets/logofc.png" alt="logo" class="logo" />
+            </a>
+          </div>
+          <div class="footer-title">
+            <h3>MICHAEL F.C</h3>
+          </div>
+        </div>
+        <div class="footer-text">
+          <p>Where champions are made.</p>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <div class="contact-header">
+          <h3>Contact</h3>
+        </div>
+        <div class="contact-address">
+          <p>123 Football Lane, Soccer City, Finland</p>
+          <p>
+            <a href="mailto:info@michealfc.com " class="mail">
+              info@michealfc.com</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <h3>Follow Us</h3>
+        <a href="#"><i class="ri-youtube-fill"></i></a>
+        <a href="#"><i class="ri-facebook-fill"></i></a>
+        <a href="#"><i class="ri-twitter-fill"></i></a>
+        <a href="#"><i class="ri-instagram-fill"></i></a>
+      </div>
+    </div>
+    <div>
+      <p class="footer-copyright">
+        &copy; 2023 Michael Football Club. All rights reserved.
+      </p>
+    </div>
+  </footer>
 </html>
