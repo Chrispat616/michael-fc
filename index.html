@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logofc.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -16,7 +17,7 @@
         <div class="nav-header">
           <div class="nav-left">
             <div class="nav-logo">
-              <a href="#">
+              <a href="index.html">
                 <img src="assets/logofc.png" alt="logo" class="logo" />
               </a>
             </div>
@@ -28,13 +29,14 @@
             <i class="ri-menu-line"></i>
           </button>
           <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
           <div class="nav-btn">
-            <button class="btn">Contact Us</button>
+            <button class="btn" onclick="location.href='contact.html'">
+              Contact Us
+            </button>
           </div>
         </div>
       </nav>
@@ -51,8 +53,12 @@
             and champions rise through dedicated training.
           </p>
           <div class="header-btn">
-            <button class="btn">Watch Training</button>
-            <button class="btn-2">Join Training</button>
+            <button class="btn" onclick="location.href='#asset-video'">
+              Watch Training
+            </button>
+            <button class="btn-2" onclick="location.href='contact.html'">
+              Join Training
+            </button>
           </div>
         </div>
       </div>
@@ -82,13 +88,13 @@
         </li>
       </ul>
     </section>
-    <secion class="training-sessions">
+    <section class="training-sessions">
       <div class="training-tag">
         <h2>TRAINING <span style="color: #f97316">EXCELLENCE</span></h2>
         <p>Experience world-class training facilities and methods</p>
       </div>
       <div>
-        <ul class="assets-container">
+        <ul class="assets-container" id="asset-video">
           <li>
             <img
               src="assets/mfc-squatting.png"
@@ -132,14 +138,14 @@
         </ul>
       </div>
 
-      <div class="video-container">
+      <div class="video-container" id="asset-video">
         <video controls preload="metadata">
           <source src="assets/mfc-video.mp4" type="video/mp4" />
           Your browser does not support the video tag
         </video>
         <div class="video-caption">Highlights from our training session</div>
       </div>
-    </secion>
+    </section>
     <section class="cards">
       <div class="cards-tag">
         <h2>OUR <span style="color: #f97316">SQUAD</span></h2>
@@ -181,8 +187,12 @@
         </p>
       </div>
       <div class="footer-btn">
-        <button class="btn">Start Your Journey</button>
-        <button class="btn-2">Contact Us</button>
+        <button class="btn" onclick="location.href='contact.html'">
+          Start Your Journey
+        </button>
+        <button class="btn-2" onclick="location.href='contact.html'">
+          Contact Us
+        </button>
       </div>
     </section>
     <script>
@@ -196,7 +206,7 @@
       <div class="footer-left">
         <div class="footer-header">
           <div class="footer-logo">
-            <a href="#">
+            <a href="index.html">
               <img src="assets/logofc.png" alt="logo" class="logo" />
             </a>
           </div>
@@ -213,10 +223,10 @@
           <h3>Contact</h3>
         </div>
         <div class="contact-address">
-          <p>123 Football Lane, Soccer City, Finland</p>
+          <p>kardinaalinkatu 3. O. 135, Turku Finland</p>
           <p>
-            <a href="mailto:info@michealfc.com " class="mail">
-              info@michealfc.com</a
+            <a href="mailto:michellbrown99@yahoo.com " class="mail">
+              michellbrown99@yahoo.com</a
             >
           </p>
         </div>
