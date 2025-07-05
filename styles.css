@@ -28,7 +28,7 @@
   z-index: 10;
   pointer-events: auto;
   position: relative;
-  padding: 0.75rem 1.5rem;
+  padding: 0.75rem 1.25rem;
   outline: none;
   border: none;
   font-size: 1rem;
@@ -333,6 +333,12 @@ nav {
   .summary h2 {
     font-size: 0.9rem;
   }
+  .btn-2 {
+    width: 146px;
+    padding: 0.55rem 0.9rem;
+    font-size: 1rem;
+    margin-left: 0px;
+  }
 }
 
 @media (max-width: 348px) {
@@ -384,7 +390,7 @@ nav {
 }
 
 .training-sessions {
-  padding: 3rem 1rem;
+  padding: 16px 16px 0px 16px;
 }
 
 .assets-container {
@@ -423,16 +429,16 @@ nav {
 }
 
 .image-caption {
+  width: 100%;
   position: absolute;
-  bottom: 1rem;
-  left: 1rem;
+  bottom: 0.3rem;
   background: var(--primary-color);
-  opacity: 70%;
+  opacity: 80%;
   color: white;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   font-weight: 500;
-  border-radius: 12px 0 12px 0;
+  border-radius: 12px;
   pointer-events: none;
 }
 
@@ -464,7 +470,7 @@ nav {
   background: var(--primary-color);
   color: white;
   padding: 0.5rem 1rem;
-  border-radius: 12px 0 12px 0;
+  border-radius: 12px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -488,7 +494,7 @@ nav {
 }
 
 .cards {
-  padding: 4rem 1rem;
+  padding: 0px 64px 64px 64px;
   max-width: var(--max-width);
   margin: 0 auto;
 }
@@ -751,7 +757,8 @@ footer {
 @media (max-width: 420px) {
   .footer-btn {
     display: flex;
+    flex-direction: column;
     gap: 0.75rem;
-    align-items: flex-start;
+    align-items: center;
   }
 }
