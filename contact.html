@@ -26,7 +26,8 @@
             </div>
           </div>
           <button class="nav-burger" id="nav-burger" aria-label="Menu">
-            <i class="ri-menu-line"></i>
+            <i class="ri-menu-line" id="burger-icon"></i>
+            <i class="ri-close-line" id="close-icon" style="display: none"></i>
           </button>
           <ul class="nav-links" id="nav-links">
             <li><a href="index.html">Home</a></li>
@@ -232,7 +233,15 @@
     <script>
       const burger = document.getElementById("nav-burger");
       const links = document.getElementById("nav-links");
-      burger.onclick = () => links.classList.toggle("open");
+      const burgerIcon = document.getElementById("burger-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      burger.onclick = () => {
+        links.classList.toggle("open");
+        const isOpen = links.classList.contains("open");
+        burgerIcon.style.display = isOpen ? "none" : "inline-block";
+        closeIcon.style.display = isOpen ? "inline-block" : "none";
+      };
     </script>
   </body>
   <footer>
