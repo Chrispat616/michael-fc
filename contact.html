@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logofc.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
@@ -16,7 +17,7 @@
         <div class="nav-header">
           <div class="nav-left">
             <div class="nav-logo">
-              <a href="#">
+              <a href="index.html">
                 <img src="assets/logofc.png" alt="logo" class="logo" />
               </a>
             </div>
@@ -25,12 +26,12 @@
             </div>
           </div>
           <button class="nav-burger" id="nav-burger" aria-label="Menu">
-            <i class="ri-menu-line"></i>
+            <i class="ri-menu-line" id="burger-icon"></i>
+            <i class="ri-close-line" id="close-icon" style="display: none"></i>
           </button>
           <ul class="nav-links" id="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#about">About Us</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="#contact-form">Contact Us</a></li>
           </ul>
           <div class="nav-btn">
@@ -53,8 +54,20 @@
             and champions rise through dedicated training.
           </p>
           <div class="header-btn">
-            <button class="btn">Watch Training</button>
-            <button class="btn-2">Join Training</button>
+            <button
+              class="btn"
+              class="btn-2"
+              onclick="location.href='index.html'"
+            >
+              Watch Training
+            </button>
+            <button
+              class="btn-2"
+              class="btn-2"
+              onclick="location.href='#contact-form'"
+            >
+              Join Training
+            </button>
           </div>
         </div>
       </div>
@@ -102,7 +115,7 @@
                 </div>
                 <div class="address-icon">
                   <i class="ri-map-pin-2-fill"></i>
-                  <p>123 Football Lane, Soccer City, Finland</p>
+                  <p>kardinaalinkatu 3. O. 135, Turku Finland</p>
                 </div>
               </li>
               <li>
@@ -111,7 +124,7 @@
                 </div>
                 <div class="address-icon">
                   <i class="ri-phone-fill"></i>
-                  <p>(+358)44556688</p>
+                  <p>(+358)401285421</p>
                 </div>
               </li>
               <li>
@@ -121,8 +134,8 @@
                 <div class="address-icon">
                   <i class="ri-mail-fill"></i>
                   <p>
-                    <a href="mailto:info@michealfc.com " class="mail">
-                      info@michealfc.com</a
+                    <a href="michellbrown99@yahoo.com " class="mail">
+                      michellbrown99@yahoo.com</a
                     >
                   </p>
                 </div>
@@ -132,7 +145,7 @@
         </div>
 
         <form
-          action="https://formspree.io/f/{FORM_ID}"
+          action="https://formspree.io/f/myzjoaoq"
           class="fs-form"
           target="_top"
           method="POST"
@@ -220,7 +233,15 @@
     <script>
       const burger = document.getElementById("nav-burger");
       const links = document.getElementById("nav-links");
-      burger.onclick = () => links.classList.toggle("open");
+      const burgerIcon = document.getElementById("burger-icon");
+      const closeIcon = document.getElementById("close-icon");
+
+      burger.onclick = () => {
+        links.classList.toggle("open");
+        const isOpen = links.classList.contains("open");
+        burgerIcon.style.display = isOpen ? "none" : "inline-block";
+        closeIcon.style.display = isOpen ? "inline-block" : "none";
+      };
     </script>
   </body>
   <footer>
@@ -245,10 +266,10 @@
           <h3>Contact</h3>
         </div>
         <div class="contact-address">
-          <p>123 Football Lane, Soccer City, Finland</p>
+          <p>kardinaalinkatu 3. O. 135, Turku Finland</p>
           <p>
-            <a href="mailto:info@michealfc.com " class="mail">
-              info@michealfc.com</a
+            <a href="mailto:michellbrown99@yahoo.com " class="mail">
+              michellbrown99@yahoo.com</a
             >
           </p>
         </div>
